@@ -17,6 +17,15 @@ h2, h3 {
   color: hsl(243, 87%, 12%);
 }
 
+.hide {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 /* Image dimensions */
 #logo {
   width: 80px;
@@ -119,9 +128,20 @@ nav > ul {
   border: 1px solid hsl(238, 22%, 44%);
 }
 
+#input-email.confirm {
+  border-color: hsl(0, 100%, 50%);
+}
+
 #input-email::placeholder {
   color: hsl(0, 0%, 75%);
   font-size: 12px;
+}
+
+#input-confirm {
+  width: 89%;
+  margin: .5rem auto 0 auto;
+  text-align: start;
+  color: hsl(0, 100%, 50%);
 }
 
 #input-submit {
@@ -132,6 +152,10 @@ nav > ul {
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   background-color: hsl(224, 93%, 58%);
+}
+
+#input-submit:hover {
+  background-color: hsla(224, 93%, 58%, .5);
 }
 
 .landing-about {
@@ -169,6 +193,10 @@ nav > ul {
 
 .landing-about > div:nth-of-type(3) > a {
   margin-right: .25rem;
+}
+
+.landing-about > div:nth-of-type(3) > a:hover {
+  color: hsla(170, 45%, 43%, .5);
 }
 
 .landing-testimonial {
@@ -229,11 +257,20 @@ nav > ul {
   background-color: hsl(0, 0%, 100%);
   padding: 0.75rem;
   width: 70%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   border-radius: 2px;
   color: hsl(238, 22%, 44%);
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
 
+#early-access-email.confirm {
+  border: 1px solid hsl(0, 100%, 50%);
+}
+
+#early-access-confirm {
+  width: 70%;
+  margin: -.5rem auto .5rem auto;
+  text-align: start;
 }
 
 .landing-early-access > form > input:last-of-type {
@@ -243,6 +280,10 @@ nav > ul {
   padding: 0.75rem;
   border-radius: 2px;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.landing-early-access > form > input:last-of-type:hover {
+  background-color: hsla(224, 93%, 58%, .5);
 }
 
 /* Footer */
@@ -277,6 +318,10 @@ footer > div > div:first-of-type {
   margin-bottom: 2rem;
 }
 
+.footer-helpful-links > li > a:hover {
+  color: hsl(224, 93%, 58%);
+}
+
 .footer-social-media-links {
   display: flex;
   justify-content: space-between;
@@ -289,4 +334,11 @@ footer > div > div:first-of-type {
   padding: .5rem;
   border: 1px solid hsl(240, 75%, 98%);
   border-radius: 50%;
+}
+
+.footer-social-media-links > li > a:hover > svg { 
+  border-color: hsl(224, 93%, 58%);
+}
+.footer-social-media-links > li > a:hover > svg > path {
+  fill: hsl(224, 93%, 58%);
 }
