@@ -410,15 +410,16 @@ footer > div > div:first-of-type {
 
   .landing-intro {
     display: grid;
+    align-items: center;
     grid-template-columns: 40% 60%;
     grid-template-rows: min-content;
-    margin: 3rem 0 6rem 0;
+    margin: 3rem 0 9rem 0;
     padding: 2rem;
     text-align: start;
   }
 
   #hero-img {
-    width: 60%;
+    width: 80%;
     grid-column: 2 / 3; 
     grid-row: 1 / 4;
   }
@@ -462,8 +463,128 @@ footer > div > div:first-of-type {
     margin: 0;
   }
 
+  /* Main .landing-about */
+  .landing-about {
+    display: grid;
+    flex-direction: initial;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, auto);
+    padding: 2rem 2rem 6rem 2rem;
+  }
 
+  #landing-bg-curve {
+    top: -85.5px;
+    z-index: -1;
+  }
 
+  #landing-about-img {
+    width: 80%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+  }
+
+  .landing-about > h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    text-align: start;
+  }
+
+  .landing-about > div:first-of-type, .landing-about > div:nth-of-type(2) {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .landing-about > div:nth-of-type(3) {
+    text-align: start;
+    margin: 0 0 2rem 0;
+    width: 35%;
+  }
+
+  .landing-testimonial {
+    margin: 0;
+  }
+
+  .landing-early-access {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(3, auto);
+    gap: 0 4rem;
+    text-align: start;
+    padding: 4rem 2rem;
+  }
+
+  .landing-early-access > h3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .landing-early-access > div {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    padding: 0;
+    margin: 0;
+  }
+
+  .landing-early-access > form {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+
+  #early-access-email {
+    width: 100%;
+  }
+
+  #early-access-confirm {
+    width: 100%;
+    text-align: start;
+  }
+
+  #early-access-submit {
+    width: 50%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem 2rem;
+  }
+
+  footer > h2 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+  }
+
+  footer > div {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .footer-helpful-links {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0;
+  }
+
+  .footer-helpful-links > li {
+    margin: 0;
+    height: 20%;
+  }
+
+  .footer-social-media-links {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    align-items: flex-start;
+    margin: 0;
+    width: 60%;
+  }
 }
 
 @media (min-width: 1200px) {
