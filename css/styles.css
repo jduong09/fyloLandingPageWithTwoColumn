@@ -419,7 +419,7 @@ footer > div > div:first-of-type {
   }
 
   #hero-img {
-    width: 80%;
+    width: 70%;
     grid-column: 2 / 3; 
     grid-row: 1 / 4;
   }
@@ -429,6 +429,7 @@ footer > div > div:first-of-type {
     margin: 0;
     grid-column: 1 / 2;
     grid-column: 1 / 2;
+    align-self: end;
   }
 
   .landing-intro > div {
@@ -441,6 +442,7 @@ footer > div > div:first-of-type {
   .landing-intro > form {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    align-self: start;
     display: flex;
     flex-wrap: wrap;
   }
@@ -588,9 +590,74 @@ footer > div > div:first-of-type {
 }
 
 @media (min-width: 1200px) {
+  header {
+    padding: 3rem;
+  }
 
-}
+  #logo {
+    width: 166px;
+  }
 
-@media (min-width: 1400px) {
+  nav {
+    width: 20%;
+  }
 
+  .landing-intro {
+    grid-template-columns: 45% 55%;
+    margin-bottom: 12rem;
+    margin-top: 0rem;
+    padding: 3rem;
+  }
+
+  .landing-intro > h2 {
+    font-size: 2rem;
+  }
+
+  .landing-intro > div {
+    width: 90%;
+  }
+
+  #hero-img {
+    width: 65%;
+  }
+
+  .landing-about {
+    padding: 2rem 3rem 6rem 3rem;
+  }
+
+  #landing-bg-curve {
+    top: -116px;
+  }
+
+  .landing-about > h3 {
+    font-size: 2rem;
+  }
+
+  .landing-testimonial {
+    width: 50%;
+  }
+
+  .landing-early-access {
+    padding: 6rem 3rem;
+  }
+
+  .landing-early-access > h3 {
+    font-size: 2rem;
+  }
+
+  .landing-early-access > div {
+    width: 90%;
+  }
+
+  .landing-early-access > form {
+    justify-self: end;
+  }
+
+  footer {
+    padding: 6rem 3rem 3rem 3rem;
+  }
+
+  .footer-social-media-links {
+    width: 50%;
+  }
 }
